@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -18,8 +18,9 @@ export const Wrapper = styled.div`
   }
 
   img {
-    max-width: 80px;
-    object-fit: cover;
+    max-width: 100px;
+    object-fit: scale-down;
     margin-left: 40px;
+    border-radius: 10px 10px 10px 10px;
   }
 `;

@@ -12,6 +12,12 @@ context('Cart Actions', () => {
 
     cy.get('[data-cy=badge-count]').should('have.text', '2');
 
+    // open drawer
+    cy.get('[data-cy=open-shopping-cart]').click();
+
+    // click button
+    cy.get('[data-cy=make-purchase]').click();
+
   })
 
 })
