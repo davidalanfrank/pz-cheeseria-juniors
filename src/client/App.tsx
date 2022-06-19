@@ -23,6 +23,7 @@ export type CartItemType = {
   amount: number;
 };
 
+// comment
 
 const getCheeses = async (): Promise<CartItemType[]> =>
   await (await fetch(`api/cheeses`)).json();
