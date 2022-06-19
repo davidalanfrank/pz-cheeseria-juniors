@@ -3,7 +3,7 @@
 ## Overview
 
 Help us complete our Cheese shopping cart.<br />
-So we can start selling cheese to the delight of our customers, we will need you to implement a few more desired features. As you can see, there is already some code to get you started. The backend server is using NodeJS and the frontend client is using ReactJS. See the ***Important Scripts*** section below to get you started.<br />
+So we can start selling cheese to the delight of our customers, we will need you to implement a few more desired features. As you can see, there is already some code to get you started. The backend server is using NodeJS and the frontend client is using ReactJS. See the **_Important Scripts_** section below to get you started.<br />
 We recommend you fork this repository under your own username.
 
 Once these features are completed, you will also make sure the functionality you implemented is covered by automated tests.
@@ -17,8 +17,8 @@ Following are the features you will need to complete
 3. Show all recently purchased items when clicking on the "Recent Purchases" button on the top left of the page. You may choose to display those items in a Drawer, a Dialog or any other control you see fit. Note that the recent purchased items **must** be retrieved from the server.
 
 4. Add a UI automation test that performs the Purchase action you implemented as part of Feature #2. For this test case you will add two separate items to the cart and click on the **Purchase** button you have added as part of Feature #2.
-For this exercise we will be using the Cypress.io tool-set. You will find code to get you started in the 'e2e' folder.
-***Note: You are free to add any selectors to your client code which may be required by the e2e tests.***
+   For this exercise we will be using the Cypress.io tool-set. You will find code to get you started in the 'e2e' folder.
+   **_Note: You are free to add any selectors to your client code which may be required by the e2e tests._**
 
 Once done, please notify us of your repository details and make sure it is publicly accessible. As part of your assessment we will confirm that all features were implemented as instructed.
 
@@ -50,3 +50,9 @@ npm test
 ### Helpful links
 
 [React Material UI](https://material-ui.com/getting-started/usage/)
+
+### Additional functionality recommendations
+
+Given a larger time budget, it would be important to add payment handling into the purchasing process. The UI for this feature could be implemented in the same drawer as the Cart component to lessen any friction a cheeseria customer might have by introducing additional dialogs or navigations. Once the purchase button is pressed, the component could be destroyed, revealing an embedded modal in the same drawer parent div. This would allow the user to step through the payment process until their transaction is processed.
+
+In addition to this functionality, more rigorous testing could be implemented for each server endpoint to ensure the user is notified if ever there is a problem with this connection. These error messages could convey more information to the user so as to not leave them questioning what action they should take next if something were to go wrong.
